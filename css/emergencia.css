@@ -45,7 +45,7 @@ body.emergencia .page-foto {
   width:30%; text-align:center;
 }
 body.emergencia .page-foto img {
-  width: 400px;
+  width: 450px;
   height: auto; /* aumentado */
   border-radius:10px;
 }
