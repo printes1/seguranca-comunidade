@@ -1,0 +1,50 @@
+/* fortalecendo_comunidade.css */
+body.segcomunidade {
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f2f2f2;
+  color:#222;
+  min-height:100vh;
+  overflow-x:hidden;
+  padding-top:30px;
+  padding-bottom:80px;
+  margin:0;
+}
+
+/* header/footer */
+body.segcomunidade header, body.segcomunidade footer {
+  width:100%; left:0; background:#004823; color:#fff; text-align:center; z-index:10;
+}
+body.segcomunidade header { position:fixed; top:0; padding:22px 10px; font-size:22px; }
+body.segcomunidade footer { position:fixed; bottom:0; padding:20px 10px; font-size:14px; }
+
+/* layout */
+body.segcomunidade .page-container { display:flex; justify-content:center; }
+body.segcomunidade .page-content {
+  width:90%; max-width:1200px;
+  display:flex; gap:40px; align-items:center;
+  justify-content:space-between; margin-top:20px;
+}
+
+/* texto */
+body.segcomunidade .page-texto { width:55%; }
+body.segcomunidade .page-texto h2 { font-size:28px; color:#004823; margin-bottom:10px; }
+body.segcomunidade .page-texto h3 { font-size:18px; line-height:1.6; margin-bottom:16px; }
+body.segcomunidade .page-texto ul { margin-left:20px; margin-bottom:12px; }
+body.segcomunidade .page-texto li { margin-bottom:10px; font-size:17px; }
+
+/* foto */
+body.segcomunidade .page-foto { width:40%; text-align:center; }
+body.segcomunidade .page-foto img { width: 620px; height: auto; border-radius:10px; }
+
+/* voltar */
+body.segcomunidade .voltar {
+  background:#004823; color:#fff; padding:10px 18px;
+  border-radius:6px; text-decoration:none; font-size:16px;
+}
+
+/* responsivo */
+@media(max-width:900px){
+  body.segcomunidade .page-content { flex-direction:column; text-align:center; }
+  body.segcomunidade .page-texto, body.segcomunidade .page-foto { width:100%; }
+  body.segcomunidade .page-foto img { max-width:300px; }
+}
